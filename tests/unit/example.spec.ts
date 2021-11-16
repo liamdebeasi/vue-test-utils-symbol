@@ -1,9 +1,8 @@
-import { mount } from '@vue/test-utils'
-import Home from '@/views/Home.vue'
+import { shallowMount } from '@vue/test-utils'
+import App from '@/App.vue'
 
-describe('Home.vue', () => {
-  it('renders home vue', () => {
-    const wrapper = mount(Home)
-    expect(wrapper.text()).toMatch('Ready to create an app?')
+describe('App.vue', () => {
+  it('renders App vue', () => {
+    const wrapper = shallowMount(App)
   })
 })

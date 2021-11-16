@@ -1,18 +1,21 @@
 <template>
-  <ion-app>
-    <ion-router-outlet />
-  </ion-app>
+  <div>
+    <MyCmp></MyCmp>
+    
+    <br />
+    
+    <MyCmp myProp="ABC"></MyCmp>
+  </div>
 </template>
 
 <script lang="ts">
-import { IonApp, IonRouterOutlet } from '@ionic/vue';
 import { defineComponent } from 'vue';
+import MyCmp from '@/MyCmp.vue';
 
 export default defineComponent({
-  name: 'App',
+  name: 'Home',
   components: {
-    IonApp,
-    IonRouterOutlet
+    MyCmp
   }
 });
 </script>
